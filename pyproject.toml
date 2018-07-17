@@ -13,3 +13,6 @@ requires = [
     "jinja2",
 ]
 classifiers = ["License :: OSI Approved :: MIT License"]
+
+[tool.flit.scripts]
+eks-switcher = "eks_switcher:main"
