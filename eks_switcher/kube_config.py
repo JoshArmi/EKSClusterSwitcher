@@ -2,8 +2,8 @@ from os.path import expanduser
 
 from jinja2 import Environment, PackageLoader, select_autoescape
 
-from aws_eks import get_server_url, get_certificate_data
-from aws_config import get_role_arn
+from eks_switcher.aws_eks import get_server_url, get_certificate_data
+from eks_switcher.aws_config import get_role_arn
 
 
 def generate_kube_config(client, name, profile):
