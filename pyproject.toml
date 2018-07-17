@@ -1,0 +1,10 @@
+[build-system]
+requires = ["flit"]
+build-backend = "flit.buildapi"
+
+[tool.flit.metadata]
+module = "eks_switcher"
+author = "Josh Armitage"
+author-email = "josh.armitage@outlook.com"
+home-page = "https://github.com/JoshArmi/EKSClusterSwitcher"
+classifiers = ["License :: OSI Approved :: MIT License"]

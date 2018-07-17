@@ -1,0 +1,9 @@
+[default]
+source_profile = default
+region = us-east-1
+output = json
+
+[profile eks]
+source_profile = default
+region = us-east-1
+output = json

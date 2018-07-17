@@ -1,0 +1,19 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+"boto3" = "*"
+click = "*"
+"jinja2" = "*"
+
+[dev-packages]
+pylint = "*"
+"pep8" = "*"
+pytest = "*"
+flit = "*"
+ipython = "*"
+
+[requires]
+python_version = "3.7"

@@ -1,0 +1,11 @@
+[default]
+source_profile = default
+region = us-east-1
+output = json
+role_arn = arn:aws:iam::000000000000:role/roleDefaultDevel
+
+[profile eks]
+source_profile = default
+region = us-east-1
+output = json
+role_arn = arn:aws:iam::333333333333:role/roleEksDevDevel

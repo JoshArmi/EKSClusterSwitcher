@@ -1,0 +1,25 @@
+{
+    "cluster": {
+        "endpoint": "https://A0DCCD80A04F01705DD065655C30CC3D.yl4.us-west-2.eks.amazonaws.com",
+        "status": "ACTIVE",
+        "createdAt": 1527807879.988,
+        "certificateAuthority": {
+            "data": "HERE_BE_SOME_CERT_DATA="
+        },
+        "arn": "arn:aws:eks:us-west-2:012345678910:cluster/devel",
+        "roleArn": "arn:aws:iam::012345678910:role/eks-service-role-AWSServiceRoleForAmazonEKS-J7ONKE3BQ4PI",
+        "clientRequestToken": "aClientRequestToken",
+        "version": "1.10",
+        "name": "test_cluster",
+        "resourcesVpcConfig": {
+            "securityGroupIds": [
+            "sg-6979fe18"
+            ],
+            "vpcId": "vpc-950809ec",
+            "subnetIds": [
+            "subnet-6782e71e",
+            "subnet-e7e761ac"
+            ]
+        }
+    }
+}

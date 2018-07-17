@@ -1,0 +1,29 @@
+apiVersion: v1
+clusters:
+- cluster:
+    server: {{ server_url }}
+    certificate-authority-data: {{ certificate_data }}
+  name: kubernetes
+contexts:
+- context:
+    cluster: kubernetes
+    user: aws
+  name: aws
+current-context: aws
+kind: Config
+preferences: {}
+users:
+- name: aws
+  user:
+    exec:
+      apiVersion: client.authentication.k8s.io/v1alpha1
+      command: heptio-authenticator-aws
+      args:
+        - "token"
+        - "-i"
+        - "{{ cluster_name }}"
+        - "-r"
+        - "{{ role_arn }}"
+      env:
+        - name: AWS_PROFILE
+          value: {{ aws_profile }}
