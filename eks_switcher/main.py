@@ -1,8 +1,8 @@
 import boto3
 import click
 
-from aws_eks import list_clusters
-from kube_config import generate_kube_config
+from eks_switcher.aws_eks import list_clusters
+from eks_switcher.kube_config import generate_kube_config
 
 
 @click.command()

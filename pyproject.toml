@@ -7,4 +7,9 @@ module = "eks_switcher"
 author = "Josh Armitage"
 author-email = "josh.armitage@outlook.com"
 home-page = "https://github.com/JoshArmi/EKSClusterSwitcher"
+requires = [
+    "boto3",
+    "click",
+    "jinja2",
+]
 classifiers = ["License :: OSI Approved :: MIT License"]
